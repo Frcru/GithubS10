@@ -1,0 +1,41 @@
+!DOCTYPE html>
+
+<html lang="es">
+    <head>
+      <title>Aplicacion de ahorcado</title>
+      <link type="text/css" href="css/cupertino/jquery-ui-1.8.1.custom.css" rel="Stylesheet"/>
+      <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+      <script type="text/javascript" src="js/jquery-1.8.1.custom.min.js"></script>
+      <script src="Demo.js"></script>
+      <script>
+          function MensajeHola(){
+            document.getElementById("Entrada").innerHTML="HolaMundo";
+          }
+          function MensajeRestab(){
+            document.getElementById("Entrada").innerHTML="Inicio";
+          }
+          function MensajeSuma(){
+            a=10;
+            b=20;
+            c=a+b;
+            document.getElementById("Suma").innerHTML=c+""
+          }
+      </script>
+    </head>
+    <body bgcolor="blue">
+        <header>
+            <h1>Hola</h1>
+        </header>
+        <p id="Entrada">Inicio</p>
+        <p id="Suma"></p>
+        <p id="Producto"></p>
+        <textarea id="Suma1"></textarea>
+        
+        <button type="button" onclick="MensajeHola()">Mensaje</button>
+        <button type="button" onclick="MensajeSuma()">Suma</button>
+        <button type="button" onclick="MensajeProducto()">Producto</button>
+        <button type="button" onclick="Alertas()">Mensaje de Alerta</button>
+        <button type="button" onclick="Printers()">Mensaje de Printers</button>
+        <button type="button" onclick="Ingreso()">Ingreso</button>
+    </body>
+</html>
